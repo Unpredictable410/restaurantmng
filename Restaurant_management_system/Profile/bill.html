@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" data-bs-theme="dark">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<title>bill</title>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position:relative;
+  margin: auto;
+  max-width:98%;
+  background-size:cover;
+  box-shadow:3px 3px 6px red;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+div.container-fluid img{
+	height:100px;
+	display:block;
+}
+
+.product-content .product-image img{
+	height:300px;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 11px;
+  padding-right:30px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.checked{
+	color:red;
+}
+
+input[type=number]{
+	width:100px;
+
+}
+
+center .btn{
+	background-color:#FF0000;
+}
+
+center .btn:hover{
+	background-color:#999999;
+}
+.column{
+	width:50%;
+}
+
+.steps .step {
+    display: block;
+    width: 100%;
+    margin-bottom: 35px;
+    text-align: center
+}
+
+.steps .step .step-icon-wrap {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    text-align: center
+}
+
+.steps .step .step-icon-wrap::before,
+.steps .step .step-icon-wrap::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 3px;
+    margin-top: -1px;
+    background-color: #e1e7ec;
+    content: '';
+    z-index: 1
+}
+
+.steps .step .step-icon-wrap::before {
+    left: 0
+}
+
+.steps .step .step-icon-wrap::after {
+    right: 0
+}
+
+.steps .step .step-icon {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e1e7ec;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    color: #374250;
+    font-size: 38px;
+    line-height: 81px;
+    z-index: 5
+}
+
+.steps .step .step-title {
+    margin-top: 16px;
+    margin-bottom: 0;
+    color: #606975;
+    font-size: 14px;
+    font-weight: 500
+}
+
+.steps .step:first-child .step-icon-wrap::before {
+    display: none
+}
+
+.steps .step:last-child .step-icon-wrap::after {
+    display: none
+}
+
+.steps .step.completed .step-icon-wrap::before,
+.steps .step.completed .step-icon-wrap::after {
+    background-color: #0da9ef
+}
+
+.steps .step.completed .step-icon {
+    border-color: #0da9ef;
+    background-color: #0da9ef;
+    color: #fff
+}
+
+@media (max-width: 576px) {
+    .flex-sm-nowrap .step .step-icon-wrap::before,
+    .flex-sm-nowrap .step .step-icon-wrap::after {
+        display: none
+    }
+}
+
+@media (max-width: 768px) {
+    .flex-md-nowrap .step .step-icon-wrap::before,
+    .flex-md-nowrap .step .step-icon-wrap::after {
+        display: none
+    }
+}
+
+@media (max-width: 991px) {
+    .flex-lg-nowrap .step .step-icon-wrap::before,
+    .flex-lg-nowrap .step .step-icon-wrap::after {
+        display: none
+    }
+}
+
+@media (max-width: 1200px) {
+    .flex-xl-nowrap .step .step-icon-wrap::before,
+    .flex-xl-nowrap .step .step-icon-wrap::after {
+        display: none
+    }
+}
+
+.bg-faded, .bg-secondary {
+    background-color: #f5f5f5 !important;
+}
+/*end shopping*/
+
+</style>	
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<div class="container-fluid">
+	<a href="" class="navbar-brand"><img src="klipartz.com (2).png" /></a>
+	
+	<div class="container-fluid">
+	<div class="text-white ms-3"><h1 style="font-family:Freestyle Script; font-size:75px">Restaurant Management</h1></div></div>
+	<div class="collapse navbar-collapse">
+<ul class="navbar-nav me-5">
+		<li class="nav-item me-4" ><a href="home for profile.html" class="nav-link">Home</a></li>
+		<li class="nav-item me-4" ><a href="profile for profilr.html" class="nav-link">Profile</a></li>
+		<li class="nav-item me-4" ><a href="product.html" class="nav-link">Product</a></li>
+		<li class="nav-item me-4" ><a href="../loginpage.html" class="nav-link text-warning">Logout</a></li>
+</ul>
+</nav>
+
+<br />
+<!-- contentarea-->
+<div class="card">
+  <div class="card-header bg-dark"></div>
+  <div class="card-body">
+
+    <div class="container bg-white text-dark">
+      <div class="row">
+        <div class="m-4">
+          <i class="bi-building" style="font-size:75px;"></i>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-xl-12">
+
+          <ul class="list-unstyled float-end">
+            <li style="font-size: 30px; color: red;">TradeIndia</li>
+            <li>
+<b>Address:</b> Infocom Network Private Limited.
+Plot No. 93-94, Riana Tower,
+Noida Express Way, Sector -136,
+Noida - 201305
+Landmark: Next to CBSE Regional Office, Noida.</li>
+            <li><b>Customer Service No:</b> 011-46710423</li>
+            <li><b>help:</b> helpdesk@tradeindia.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <h3 class="text-uppercase text-center mt-3" style="font-size: 40px;">Invoice</h3>
+        <p>123456789</p>
+      </div>
+
+      <div class="row mx-3">
+        <table class="table table-danger">
+          <thead>
+            <tr>
+              <th scope="col">Description</th>
+              <th scope="col">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tata Sampann Garam Masala, 100 gm(x3)</td>
+              <td>₹282</td>
+            </tr>
+            <tr>
+              <td>MDH Pav Bhaji Masala, 100g(x5)</td>
+              <td>₹390</td>
+            </tr>
+            <tr>
+              <td>Aashirvaad Select Sharbati Atta(x10)</td>
+              <td>₹3,360</td>
+            </tr>
+            <tr>
+              <td>Fortune Premium Kachi Ghani Pure Mustard Oil(x5)</td>
+              <td>₹640</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="row">
+        <div class="col-xl-8">
+          <ul class="list-unstyled float-end me-0">
+            <li><span class="me-3 float-start">Total Amount:</span>₹4,672
+            </li>
+            <!--<li> <span class="me-5">Discount:</span><i class="fas fa-dollar-sign"></i> 500,00</li>-->
+            <li><span class="float-start" style="margin-right: 35px;">Shippment: </span>₹499</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-xl-8" style="margin-left:60px">
+          <p class="float-end"
+            style="font-size: 30px; color: red; font-weight: 400;font-family: Arial, Helvetica, sans-serif;">
+            Total:
+             ₹5,171</span></p>
+        </div>
+
+      </div>
+
+      <div class="row mt-2 mb-5">
+        <p><i class="bi-calendar2-event"></i>&nbsp;<b>Date: </b><span class="text-dark">23 June 20221</span></p>
+        <p class="fw-bold mt-3">Signature:</p>
+      </div>
+
+    </div>
+
+
+
+  </div>
+  <div class="card-footer bg-dark"></div>
+</div>
+
+<!--content area ends-->
+<div class="container-fluid my-5">
+
+    <footer style="background-color: #AE0000; color:#FFFFFF; box-shadow:3px 3px 3px gray;">
+    <div class="container-fluid p-5">
+      <div class="row">
+        
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #FFFFFF; text-decoration:underline;">Links:</h5>
+          <ul class="list-unstyled mb-0 pe-5">
+            <li>
+              <a href="#" class="fa fa-facebook"></a>
+            
+              <a href="#" class="fa fa-instagram"></a>
+            
+              <a href="#" class="fa fa-twitter"></a>
+            
+             <a href="#" class="fa fa-reddit"></a>
+            </li>
+          </ul>
+        </div>
+		<div class="col-lg-6">
+		
+		</div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="mb-1" style="letter-spacing: 2px; color: #FFFFFF;">Opening Hours <abbr title="Time"><i class="bi-clock"></i></abbr></h5>
+          <table class="table table-hover" style="color: #FFFFFF; border-color: #666;">
+            <tbody>
+              <tr style="border-color:#FFFF00;">
+                <td>Mon - Fri:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Sat - Sun:</td>
+                <td>8am - 1am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+		<hr />
+		<div class="container-fluid">
+          <h5 class="text-uppercase text-white">Restaurant Management Praivacy Policy</h5>
+		  <button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#modal">Read</button>
+<div class="collapse" id="modal">
+              <p class="container text-white" style="text-align:justify;color:#FFFFFF;">This Privacy Policy sets out the basis on which any personal data, including but not limited to payment details and other information we collect from you or other sources or that you provide to us (“Data”) will be handled by us in connection with your access and use of www.himenus.com, and/or the HiMenus mobile application (collectively, the “Platform”), services and applications (collectively, the “Services”). We understand the importance you place on the Information, and we are committed to protecting and respecting your privacy. Please read the following carefully to understand our practices regarding your Information. By using our Services, you agree to the handling of your Information in accordance with this Privacy Policy.</p>
+        </div>
+      </div>
+    </div>
+	<div class="container-fluid pt-4">
+    <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-dark" href="menu2.html">RMS</a>
+    </div>
+	</div>
+    <!-- Copyright -->
+  </footer>
+  
+</div>
+<!-- End of .container -->
+
+</body>
+
+</html>

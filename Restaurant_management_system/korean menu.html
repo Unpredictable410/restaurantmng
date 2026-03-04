@@ -1,0 +1,730 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" data-bs-theme="dark">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<title>Veg. Menu</title>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+div.container-fluid img{
+	height:100px;
+	display:block;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 11px;
+  padding-right:30px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+/* image menu hover*/ 
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 300px;
+  border-radius:30px;
+}
+
+.column .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width:100%;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background:rgba(255,255,255,0.7);
+  border-radius:30px;
+}
+
+.container:hover .overlay {
+	cursor:pointer;
+  	opacity: 1;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 499px;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.overlay .btn{
+	color:#FFFFFF;
+	background-color:#FF0000;
+}
+
+.overlay .btn a{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+.overlay .btn a:hover{
+	color:#CCCCCC;
+}
+.text center{
+	font-size:40px;
+	color:#000000;
+}
+
+.cards .card img{
+	display:block;
+	height:400px;
+	
+}
+
+.card{
+	background:rgba(0,0,0,0.8);
+	font-family:Cambria;
+}
+
+.card .content p{
+	font-size:24px;
+}
+
+.dropdown-menu li {
+position: relative;
+}
+.dropdown-menu .dropdown-submenu {
+display: none;
+position: absolute;
+left: 100%;
+top: -7px;
+}
+.dropdown-menu .dropdown-submenu-left {
+right: 100%;
+left: auto;
+}
+.dropdown-menu > li:hover > .dropdown-submenu {
+display: block;
+}
+
+/* image menu hover ends*/
+</style>	
+</head>
+<body background="" style="">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<div class="container-fluid">
+	<a href="" class="navbar-brand"><img src="klipartz.com (2).png" /></a>
+	<div class="container-fluid">
+	<div class="text-white ms-3"><h1 style="font-family:Freestyle Script; font-size:75px">Restaurant Management</h1></div></div>
+	<div class="collapse navbar-collapse">
+<ul class="navbar-nav me-5">
+		<li class="nav-item me-4" ><a href="menu2.html" class="nav-link">Home</a></li>
+		<li class="nav-item me-4" ><a href="aboutb.html" class="nav-link">About</a></li>
+		<li class="nav-item me-4" ><a href="contact2.html" class="nav-link">Contact</a></li>
+		<li class="nav-item me-4" ><a href="image card.html" class="nav-link">Gallery</a></li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle me-4" href"#" role="button" data-bs-toggle="dropdown">Menu And Reservation</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="reservation page.html">Reservation</a></li>
+					
+					
+					<li>
+            <a class="dropdown-item" href="#">
+              Menu &raquo;
+            </a>
+            <ul class="dropdown-menu dropdown-submenu">
+              <li>
+                <a class="dropdown-item" href="indaincusine.html">Indian</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="thai menu.html">Thai</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Korean</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="mexican menu.html">Mexican</a>
+              </li>
+            </ul>
+          </li>
+					
+		
+				</ul>
+		</li>
+		<li class="nav-item me-4" ><a href="loginpage.html" class="nav-link">Login</a></li>
+</ul>
+</nav>
+
+<!--contentarea-->
+
+<hr />
+
+<div class="row" style="">
+	<center><h3>KOREAN</h3></center>
+</div>
+
+<hr />
+<!--content start -->
+
+<div class="container-fluid" >
+  <div class="row rounded">
+    <div class="column">
+
+
+<!-- first row starts-->
+<!--first column starts-->
+
+<div class="cards">
+  		<article class="card">
+    	<header>
+      		<center><h2>Bibimbap (Rice Bowl)</h2></center>
+    	</header>
+    	<img src="korean menu/bibimbap-700x500.webp" alt="Hot air balloons">
+    		<div class="content">
+      			<center><p>₹100.00</p></center>
+    		</div>
+    <footer>
+	<center>
+	<button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#rice">food detail</button>
+	<!-- The Modal -->
+<div class="modal" id="rice">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <center><h4 class="modal-title">Bibimbap (Rice Bowl)</h4></center>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        For those who find comfort in food bowls, Bibimbap will surely leave you filled and comforted. Bibimbap is a tasty mixture of rice, vegetables, beef, gochujang (hot chili paste), and a fried egg seasoned with soy sauce and sesame seeds.
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+	</center>
+	</footer>
+
+  </article>
+</div>
+
+<br />
+
+<!--1st column second column -->
+<div class="cards">
+  		<article class="card">
+    	<header>
+      		<Center><h2> Japchae (Stir-Fried Glass Noodles)</h2></Center>
+    	</header>
+    	<img src="korean menu/Japchae1.webp" alt="Hot air balloons">
+    		<div class="content">
+      			<center><p>₹320.00</p></center>
+    		</div>
+    <footer>
+	<center>
+	<button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#glass">food detail</button>
+	<!-- The Modal -->
+<div class="modal" id="glass">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Japchae (Stir-Fried Glass Noodles)</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Japchae is made up of glass noodles stirred in sesame oil with beef, mushrooms, and an assortment of other vegetables. These clear, thin noodles are made with sweet potato.
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+	</center>
+	</footer>
+
+  </article>
+</div>
+
+<br />
+<!--1 column 3rd row -->
+       <div class="cards">
+  		<article class="card">
+    	<header>
+      		<center><h2>Kimchi (Spicy Fermented Vegetables)</h2></center>
+    	</header>
+    	<img src="korean menu/Kimchi-700x500.webp" alt="Hot air balloons">
+    		<div class="content">
+      			<center><p>₹100</p></center>
+    		</div>
+    <footer>
+	<center>
+	<button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#kimchi">food detail</button>
+	<!-- The Modal -->
+<div class="modal" id="kimchi">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Kimchi (Spicy Fermented Vegetables)</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Kimchi is the first thing that comes to our mind on the mention of Korean food. It is the best way to get familiar with the Korean Cuisine. Consider it a spicy, crunchy salad made up from fermented vegetables with cabbage as its main ingredient.
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+	</center>
+	</footer>
+
+  </article>
+</div>   
+</div>
+
+
+
+<br />
+<!--frist column ends -->
+	
+	
+	
+	
+	
+	
+	
+	
+<!--first row -->
+<!--second column starts-->	
+	
+	<div class="column">
+      <div class="cards">
+  		<article class="card">
+    	<header>
+      		<center><h2>Haemul Pajeon (Seafood Vegetable Pancake)</h2></center>
+    	</header>
+    	<img src="korean menu/Korean_seafood_pancake_700x500.webp" alt="Hot air balloons">
+    		<div class="content">
+      			<center><p>₹130.00</p></center>
+    		</div>
+    <footer>
+	<center>
+	<button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#sea">food detail</button>
+	<!-- The Modal -->
+<div class="modal" id="sea">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Haemul Pajeon (Seafood Vegetable Pancake)</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        For all seafood lovers out there, Haemul Pajeon is one dish you should put on your list. Crunchy on the outside, this pancake is made with rice and egg batter mixed with a variety of seafood and green onions. Common seafood items include shellfish, oysters, shrimp, and squid.
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+	</center>
+	</footer>
+
+  </article>
+</div>
+
+<br />
+
+<!--first row second column -->
+
+<div class="cards">
+  		<article class="card">
+    	<header>
+      		<center><h2>Kimbap/Gimbap (Korean-Style Sushi)</h2></center>
+    	</header>
+    	<img src="korean menu/gimbap_700x500.webp" alt="Hot air balloons">
+    		<div class="content">
+      			<center><p>₹100</p></center>
+    		</div>
+    <footer>
+	<center>
+	<button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#sushi">food detail</button>
+	<!-- The Modal -->
+<div class="modal" id="sushi">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Kimbap/Gimbap (Korean-Style Sushi)e</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Gimbap or Kimbap is a popular grab-and-go Korean street food which resemble a lot like Japanese sushi rolls. Too pretty to eat, this Korean food recipe is made with sushi rice, meat, spinach, and stir-fried vegetables wrapped in a seaweed roll. The roll is then cut to small bite-sized discs and served with kimchi as side dish.
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+	</center>
+	</footer>
+
+  </article>
+</div>
+
+
+<br />
+<!--1 column 3rd row -->
+       <div class="cards">
+  		<article class="card">
+    	<header>
+      		<center><h2>Tteokbokki (Spicy Red Rice Cake)</h2></center>
+    	</header>
+    	<img src="korean menu/Tteokbokki1.webp" alt="Hot air balloons">
+    		<div class="content">
+      			<center><p>₹100</p></center>
+    		</div>
+    <footer>
+	<center>
+	<button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#chana">food detail</button>
+	<!-- The Modal -->
+<div class="modal" id="chana">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Tteokbokki (Spicy Red Rice Cake)</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Tteokbokki is a famous Korean street food in Seoul which is made with sweet and chewy rice cakes and fish cakes. The steamed rice cakes are stirred up with fish cakes and scallions in a special sauce made if chilli paste and soybean paste. The flavorsome street food is a must-try for those who like hot and spicy flavours.
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+	</center>
+	</footer>
+
+  </article>
+</div> 
+
+</div>
+	
+	
+
+<!--second column ends-->
+
+
+
+
+
+
+
+<!--first row-->
+<!--third column starts-->
+
+	<div class="column">
+      
+	  <div class="cards">
+  		<article class="card">
+    	<header>
+      		<center><h2>Gyeran Mari</h2></center>
+    	</header>
+    	<img src="korean menu/PROD_Gyeran Mari_1689766712143_thumb_500.png" alt="Hot air balloons">
+    		<div class="content">
+      			<center><p>₹340.00</p></center>
+    		</div>
+    <footer>
+	<center>
+	<button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#mari">food detail</button>
+		<!-- The Modal -->
+<div class="modal" id="mari">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Gyeran Mari</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Gyeran Mari is a dish made of rolled-up omelettes with vegetables such as carrots, tomatoes, onions, bell peppers etc. Another delicious option for people who prefer less spicy food, this is an extremely delectable dish that anyone can enjoy. 
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+	</center>
+	</footer>
+
+  </article>
+</div>
+
+<br>
+
+<!--first row third column-->
+
+<div class="cards">
+  		<article class="card">
+    	<header>
+      		<center><h2>Hotteok</h2></center>
+    	</header>
+    	<img src="korean menu/PROD_Hottaek_1689766774671_thumb_500.png" alt="Hot air balloons">
+    		<div class="content">
+      			<center><p>₹100</p></center>
+    		</div>
+    <footer>
+	<center>
+	<button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#hot">food detail</button>
+	<!-- The Modal -->
+<div class="modal" id="hot">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Hotteok</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        A sweet pancake with filling, Hotteok is a very famous street food in South Korea. The perfect dish to try after all the spicy and savoury dishes, Hotteok is a very appetising sweet, best for people with a sweet tooth.
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+	</center>
+	</footer>
+
+  </article>
+</div>
+
+<br />
+
+<div class="cards">
+  		<article class="card">
+    	<header>
+      		<center><h2>Pajeon</h2></center>
+    	</header>
+    	<img src="korean menu/pajeon-519x346.jpg" alt="Hot air balloons">
+    		<div class="content">
+      			<center><p>₹100</p></center>
+    		</div>
+    <footer>
+	<center>
+	<button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#paj">food detail</button>
+	<!-- The Modal -->
+<div class="modal" id="paj">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Pajeon</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Another pancake-adjacent snack, pajeon uses green onions as its main ingredient. Locals whip up a batter of eggs, wheat and flour, before pouring it over green onions in a hot pan. If there’s leftover veg lying around, it could be added to the pajeon – but it’s also delicious just as it is.
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+	</center>
+	</footer>
+
+  </article>
+</div>
+
+
+	</div>
+	
+	
+</div>
+
+
+<!--third column ends -->
+<!--contentends -->
+
+<!--footer-->
+<!-- Remove the container if you want to extend the Footer to full width. -->
+
+
+
+<div class="container-fluid my-5">
+
+    <footer style="background-color: #AE0000; color:#FFFFFF;box-shadow:3px 3px 3px gray;">
+    <div class="container-fluid p-5">
+      <div class="row">
+        
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #FFFFFF; text-decoration:underline;">Links:</h5>
+          <ul class="list-unstyled mb-0 pe-5">
+            <li>
+              <a href="#" class="fa fa-facebook"></a>
+            
+              <a href="#" class="fa fa-instagram"></a>
+            
+              <a href="#" class="fa fa-twitter"></a>
+            
+             <a href="#" class="fa fa-reddit"></a>
+            </li>
+          </ul>
+        </div>
+		<div class="col-lg-6">
+		
+		</div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="mb-1" style="letter-spacing: 2px; color: #FFFFFF;">Opening Hours <i class="bi-clock"></i></h5>
+          <table class="table table-hover" style="color: #FFFFFF; border-color: #666;">
+            <tbody>
+              <tr style="border-color:#FFFF00;">
+                <td>Mon - Fri:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Sat - Sun:</td>
+                <td>8am - 1am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+		<hr />
+		<div class="container-fluid">
+          <h5 class="text-uppercase text-white">Restaurant Management Praivacy Policy</h5>
+		  <button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#modal">Read</button>
+<div class="collapse" id="modal">
+              <p class="container text-white" style="text-align:justify;color:#FFFFFF;">This Privacy Policy sets out the basis on which any personal data, including but not limited to payment details and other information we collect from you or other sources or that you provide to us (“Data”) will be handled by us in connection with your access and use of www.himenus.com, and/or the HiMenus mobile application (collectively, the “Platform”), services and applications (collectively, the “Services”). We understand the importance you place on the Information, and we are committed to protecting and respecting your privacy. Please read the following carefully to understand our practices regarding your Information. By using our Services, you agree to the handling of your Information in accordance with this Privacy Policy.</p>
+        </div>
+      </div>
+    </div>
+	<div class="container-fluid pt-4">
+    <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-dark" href="../../../../OJT SEM-2/menu2.html">RMS</a>
+    </div>
+	</div>
+    <!-- Copyright -->
+  </footer>
+  
+</div>
+
+</body>
+
+</html>

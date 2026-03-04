@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" data-bs-theme="dark">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<title>user file home page</title>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position:relative;
+  margin: auto;
+  max-width:98%;
+  background-size:cover;
+  box-shadow:3px 3px 6px red;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+div.container-fluid img{
+	height:100px;
+	display:block;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 11px;
+  padding-right:30px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+</style>	
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<div class="container-fluid">
+	<a href="" class="navbar-brand"><img src="klipartz.com (2).png" /></a>
+	
+	<div class="container-fluid">
+	<div class="text-white ms-3"><h1 style="font-family:Freestyle Script; font-size:75px">Restaurant Management</h1></div></div>
+	<div class="collapse navbar-collapse">
+<ul class="navbar-nav me-5">
+		<li class="nav-item me-4" ><a href="home for profile.html" class="nav-link">Home</a></li>
+		<li class="nav-item me-4" ><a href="profile for profilr.html" class="nav-link">Profile</a></li>
+		<li class="nav-item me-4" ><a href="product.html" class="nav-link">Product</a></li>
+		<li class="nav-item me-4" ><a href="../loginpage.html" class="nav-link text-warning">Logout</a></li>
+</ul>
+</nav>
+
+
+<div class="container-fluid mt-3">
+  <div class="alert alert-success alert-dismissible text-white" style="background:rgba(65,249,114,0.6);">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    <center><strong>Successfully login!</strong> Welcome to your account!</center>
+  </div>
+</div>
+
+
+<!-- contentarea-->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="pexels-chan-walrus-941869.jpg" style="height:700px; width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="pexels-chan-walrus-958546.jpg" style="height:700px; width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="pexels-chan-walrus-1059905.jpg" style="height:700px; width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="pexels-marco-fischer-115740.jpg" style="height:700px; width:100%">
+  <div class="text">Caption four</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="pexels-prabal-pratap-singh-9609842.jpg" style="height:700px; width:100%">
+  <div class="text">Caption five</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="pexels-sydney-troxell-718742.jpg" style="height:700px; width:100%">
+  <div class="text">Caption six</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+<hr />
+<div class="row m-2">
+<div class="col p-3 m-2 bg-white text-dark" style="text-shadow:1px 1px 2px white;">
+	<center><h1>Vision</h1></center>
+	<p align="justify">Welcome to the Restaurant where culinary excellence meets warm hospitality. Our story is one of passion, dedication, and a commitment to delivering an exceptional dining experience to our cherished guests.</p><p>our journey began with a simple yet profound vision – to create a haven for food enthusiasts, a place where flavors come alive, and memories are made. Established in [Year of Establishment], we embarked on this culinary adventure with the aim of offering a unique blend of delectable cuisine, inviting ambiance, and impeccable service.</p>
+</div>
+<div class="col p-3 m-2 bg-white text-dark" style="text-shadow:1px 1px 2px white;">
+	<center><h1>Introduction</h1></center>
+	<p align="justify">We believe in the artistry of food. Our culinary team, led by Gordon ramsay, is dedicated to crafting dishes that tantalize the taste buds and celebrate the finest ingredients. From farm-fresh produce to premium cuts of meat, we source only the best to ensure every bite is a culinary delight.</p><p>Hospitality is at the heart of everything we do. From the moment you step through our doors, our friendly and attentive staff are here to make you feel at home. We take pride in creating an atmosphere where every guest is not just a patron but a welcomed member of our extended family.</p><p>Beyond the kitchen, we are committed to sustainability. We recognize the importance of ethical sourcing and eco-friendly practices. From reducing waste to supporting local farmers, we strive to make choices that positively impact both our community and the planet.</p>
+</div>
+<hr />
+<div class="col p-1 m-2 bg-white text-dark" style="text-shadow:1px 1px 2px white;">
+	<center><h1>News</h1></center>
+	<marquee direction="up" scrollamount="2">
+	<ul type="disk">
+		<li><h4>The restaurant reviews scam on Google: What it is and how you can stay safe</h4><p>A new online scam has emerged, wherein scammers entice indiv ..
+
+Read more at:
+<a href="http://timesofindia.indiatimes.com/articleshow/107287344.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst">Know more</a></p></li>
+		<li><h4>Man Takes Restaurant To Court For Serving 'Chicken-Less Biryani', Gets Compensation</h4>
+
+<p style="text-align:justify;">A man from Bengaluru took a local restaurant to consumer court after a surprising dining experience. According to a report by The Times of India, the man, identified as Krishnappa, filed a lawsuit against the eatery for serving “chicken biryani without any chicken.” In response, the city’s court directed the restaurant to compensate Rs 1,000 for the mental distress caused to the customer and issue a refund of Rs 150 for the food.</p></li>
+
+		<li><h4>Men Set Up Table, Serve 'Tempting' Food Inside Mumbai Local</h4>
+		<p style="text-align:justify;">For the residents of Mumbai, local trains are an indispensable part of their daily lives in the bustling city. Recently, two vloggers took the spotlight as they transformed a coach of the local train into a makeshift restaurant. The video quickly went viral, sparking a diverse range of opinions from viewers. While content creators have explored dance videos and stunts on local trains before, the establishment of a restaurant inside one is a surprising and unexpected twist that has captivated online audiences.</p>
+
+</li>
+		<li><h4>Tourist Calls Police After Restaurant Charges Rs 83,000 For Seafood Meal</h4>
+		<p style="text-align:justify;">Have you ever found yourself dining at an upscale restaurant and unintentionally ordering an excessive amount of food, only to be startled by the staggering total bill? Well, that was precisely the situation that occurred with a Japanese tourist who visited Singapore recently. The 50-year-old tourist, Junko Shinba, found herself in a distressing situation when she received a restaurant bill totalling $1,000 (approx. Rs 83,262). The incident took place at the Seafood Paradise restaurant on August 19, and the tourist, Shinba, took immediate action by involving the police, citing a lack of proper information regarding the meal’s cost.</p>
+		</li>
+	</ul></marquee>
+</div>
+</div>
+<br />
+<p align="center"><b>PHOTOS</b></p>
+<hr />
+<div class"container">
+<marquee behavior="scroll" direction="left" scrollamount="10" loop="-1">
+<img src="restaurant photos/one-restaurant.jpg" height="200px" width="200px"/>
+<img src="restaurant photos/one-restaurant-bar.jpg" height="200px" width="200px"/>
+<img src="restaurant photos/one-restaurant-dining-room.jpg" height="200px" width="200px"/>
+<img src="restaurant photos/one-restaurant-dining-room2.jpg" height="200px" width="200px"/>
+<img src="restaurant photos/FTGBlog-EATVancouver-EATFoodTable-EATVancouver.jpg" height="200px" width="200px"/>
+<img src="restaurant photos/moretti-interior-dining-room-decor-1536x1024.jpg" height="200px" width="200px"/>
+</marquee>
+
+<div>
+<hr />
+
+
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+
+<div class="container-fluid my-5">
+
+    <footer style="background-color: #AE0000; color:#FFFFFF; box-shadow:3px 3px 3px gray;">
+    <div class="container-fluid p-5">
+      <div class="row">
+        
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #FFFFFF; text-decoration:underline;">Links:</h5>
+          <ul class="list-unstyled mb-0 pe-5">
+            <li>
+              <a href="#" class="fa fa-facebook"></a>
+            
+              <a href="#" class="fa fa-instagram"></a>
+            
+              <a href="#" class="fa fa-twitter"></a>
+            
+             <a href="#" class="fa fa-reddit"></a>
+            </li>
+          </ul>
+        </div>
+		<div class="col-lg-6">
+		
+		</div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="mb-1" style="letter-spacing: 2px; color: #FFFFFF;">Opening Hours <abbr title="Time"><i class="bi-clock"></i></abbr></h5>
+          <table class="table table-hover" style="color: #FFFFFF; border-color: #666;">
+            <tbody>
+              <tr style="border-color:#FFFF00;">
+                <td>Mon - Fri:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Sat - Sun:</td>
+                <td>8am - 1am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+		<hr />
+		<div class="container-fluid">
+          <h5 class="text-uppercase text-white">Restaurant Management Praivacy Policy</h5>
+		  <button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#modal">Read</button>
+<div class="collapse" id="modal">
+              <p class="container text-white" style="text-align:justify;color:#FFFFFF;">This Privacy Policy sets out the basis on which any personal data, including but not limited to payment details and other information we collect from you or other sources or that you provide to us (“Data”) will be handled by us in connection with your access and use of www.himenus.com, and/or the HiMenus mobile application (collectively, the “Platform”), services and applications (collectively, the “Services”). We understand the importance you place on the Information, and we are committed to protecting and respecting your privacy. Please read the following carefully to understand our practices regarding your Information. By using our Services, you agree to the handling of your Information in accordance with this Privacy Policy.</p>
+        </div>
+      </div>
+    </div>
+	<div class="container-fluid pt-4">
+    <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-dark" href="menu2.html">RMS</a>
+    </div>
+	</div>
+    <!-- Copyright -->
+  </footer>
+  
+</div>
+<!-- End of .container -->
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+
+</html>

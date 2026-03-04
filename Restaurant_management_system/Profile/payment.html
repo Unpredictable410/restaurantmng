@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" data-bs-theme="dark">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<title>payment</title>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position:relative;
+  margin: auto;
+  max-width:100%;
+  background-size:cover;
+  box-shadow:3px 3px 3px orange;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+div.container-fluid img{
+	height:100px;
+	display:block;
+}
+#aboutimg{
+	margin-top:40px;
+	float:left;
+}
+
+h2.abt_title{
+	text-decoration:underline #FF9900;	
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: max-content 200px 1fr;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 11px;
+  padding-right:30px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+label.gallery img{
+	border-radius:30px;
+}
+</style>
+
+<style>
+
+/* Style inputs */
+input[type=text]{
+  cursor:poniter;
+  width: 100%;
+  border-radius:5px;
+  background-color:#CCCCCC;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  
+}
+
+input[type=number]{
+  width: 100%;
+  border-radius:5px;
+  background-color:#CCCCCC;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  cursor:pointer;
+}
+#edate{
+	cursor:poniter;
+	width:18%;
+}
+
+#cvc{
+	cursor:poniter;
+	width:18%;
+}
+
+input[type=submit] {
+  background-color:#9F0004;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius:20px;
+  border-color:#FFCECF;
+}
+
+input[type=submit]:hover {
+  background-color:#999999;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+</style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+label{
+	font-weight:bold;
+}
+
+#amount{
+	width:50%;
+}
+</style>	
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<div class="container-fluid">
+	<a href="" class="navbar-brand"><img src="klipartz.com (2).png" /></a>
+	
+	<div class="container-fluid">
+	<div class="text-white ms-3"><h1 style="font-family:Freestyle Script; font-size:75px">Restaurant Management</h1></div></div>
+	<div class="collapse navbar-collapse">
+<ul class="navbar-nav me-5">
+		<li class="nav-item me-4" ><a href="home for profile.html" class="nav-link">Home</a></li>
+		<li class="nav-item me-4" ><a href="profile for profilr.html" class="nav-link">Profile</a></li>
+		<li class="nav-item me-4" ><a href="product.html" class="nav-link">Product</a></li>
+		<li class="nav-item me-4" ><a href="../loginpage.html" class="nav-link text-warning">Logout</a></li>
+</ul>
+</nav>
+<!-- contentarea--> 
+<br />
+<!-- reservation form-->
+
+<center><h2>Payment Methods</h2>
+<p><small style="color:#FF0000"><u>Please only choose one option !</u></small></p></center>
+<hr />
+<div class="container" style="background-color:#6F0003;">
+
+  <div class="row rounded pb-3 m-2">
+    <div class="column border bg-white text-dark">
+		<h4 style="">Debit card details:</h4>
+		<p>(Please fill in the blanks)</p>
+         <form action="paymentsuccessful.html">
+        <label for="fname">First Name:<i style="color:red">*</i></label>
+        <input type="text" id="fname" name="firstname" placeholder="Enter your first name" required/>
+        <label for="lname">Last Name:<i style="color:red">*</i></label>
+        <input type="text" id="lname" name="lastname" placeholder="Enter your last name" required/>
+		<label for="dnumber">Dabit Card:<i style="color:red">*</i></label>
+		<input type="number" id="dnumber" name="dnumber" placeholder="Enter your Debit card number" required/>
+        <label for="edate"><i class="bi-calendar-week"></i>&nbsp;Expiration Date:<i style="color:red">*</i>
+		<input type="number" id="edate" name="edate" placeholder="MM/YY" required/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class="float-right">CVV:<i style="color:red">*</i></font>
+		<input type="number" id="cvc" name="cvv" placeholder="CVV" required/></label>
+		<label for="fname"><i class="bi-cash-stack"></i>&nbsp;Amount:<i style="color:red">*</i></label>
+        <input type="text" id="amount" name="firstname" placeholder="Enter amount₹/-" required/>
+		<hr />
+        <center><input type="submit" value="Pay now"></center>
+      </form>
+    </div>
+	<div class="column border bg-white text-dark">
+		<h4><i class="bi-credit-card-fill"></i>&nbsp;Credit card details:</h4>
+		<p>(Please fill in the blanks)</p>
+         <form action="paymentsuccessful.html">
+        <label for="fname">First Name:<i style="color:red">*</i></label>
+        <input type="text" id="fname" name="firstname" placeholder="Enter your first name" required/>
+        <label for="lname">Last Name:<i style="color:red">*</i></label>
+        <input type="text" id="lname" name="lastname" placeholder="Enter your last name" required/>
+		<label for="dnumber"><i class="bi-credit-card-fill"></i>&nbsp;Credit Card:<i style="color:red">*</i></label>
+		<input type="number" id="cnumber" name="cnumber" placeholder="Enter your Credit card number" required/>
+        <label for="edate"><i class="bi-calendar-week"></i>&nbsp;Expiration Date:<i style="color:red">*</i>
+		<input type="number" id="edate" name="edate" placeholder="MM/YY" required/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class="float-right">CVV:<i style="color:red">*</i></font>
+		<input type="number" id="cvc" name="cvv" placeholder="CVV" required/></label>
+		<label for="fname"><i class="bi-cash-stack"></i>&nbsp;Amount:<i style="color:red">*</i></label>
+        <input type="text" id="amount" name="firstname" placeholder="Enter amount ₹/-" required/>
+		<hr />
+        <center><input type="submit" value="Pay now"></center>
+      </form>
+  </div>
+ 
+  <div class="row m-1">
+  
+  	<div id="cash" class="column border bg-white text-dark" style="width:100%;">
+	<h4><i class="bi-cash" style="height:32px;"></i>&nbsp;Cash On Delivery:</h4><center>
+	<hr />
+	<h4 class="text-start">Address:</h4>
+	<p class="text-start">THE PARK, FP-10, Keval Chowk, opp. SVNIT COLLEGE, Nilam Society, Athwa, Surat, Gujarat 395007</p>
+	<hr />
+	<h4>Location:</h4>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7441.214848034896!2d72.77859583313659!3d21.168015868514175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04d939bab710b%3A0x2d2d04abfe47e1d2!2sTable%20-%2021!5e0!3m2!1sen!2sin!4v1707553013992!5m2!1sen!2sin" width="100%" height="450" style="border:0; border-radius:30px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br /><br />
+	<hr />
+	<form action="deliverysuccessful.html">
+	<input type="submit" value="Buy now"></center>
+	</form>
+	
+	</div>
+  
+  </div>
+ 
+</div>
+
+
+
+
+
+
+
+<!--FOOTER -->
+
+
+<div class="container-fluid my-5">
+
+    <footer style="background-color: #AE0000; color:#FFFFFF;box-shadow:3px 3px 3px gray;">
+    <div class="container-fluid p-5">
+      <div class="row">
+        
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #FFFFFF; text-decoration:underline;">Links:</h5>
+          <ul class="list-unstyled mb-0 pe-5">
+            <li>
+              <a href="#" class="fa fa-facebook"></a>
+            
+              <a href="#" class="fa fa-instagram"></a>
+            
+              <a href="#" class="fa fa-twitter"></a>
+            
+             <a href="#" class="fa fa-reddit"></a>
+            </li>
+          </ul>
+        </div>
+		<div class="col-lg-6">
+		
+		</div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="mb-1" style="letter-spacing: 2px; color: #FFFFFF;">Opening Hours <i class="bi-clock"></i></h5>
+          <table class="table table-hover" style="color: #FFFFFF; border-color: #666;">
+            <tbody>
+              <tr style="border-color:#FFFF00;">
+                <td>Mon - Fri:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Sat - Sun:</td>
+                <td>8am - 1am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+		<hr />
+		<div class="container-fluid">
+          <h5 class="text-uppercase text-white">Restaurant Management Praivacy Policy</h5>
+		  <button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#modal">Read</button>
+<div class="collapse" id="modal">
+              <p class="container text-white" style="text-align:justify;color:#FFFFFF;">This Privacy Policy sets out the basis on which any personal data, including but not limited to payment details and other information we collect from you or other sources or that you provide to us (“Data”) will be handled by us in connection with your access and use of www.himenus.com, and/or the HiMenus mobile application (collectively, the “Platform”), services and applications (collectively, the “Services”). We understand the importance you place on the Information, and we are committed to protecting and respecting your privacy. Please read the following carefully to understand our practices regarding your Information. By using our Services, you agree to the handling of your Information in accordance with this Privacy Policy.</p>
+        </div>
+      </div>
+    </div>
+	<div class="container-fluid pt-4">
+    <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-dark" href="menu2.html">RMS</a>
+    </div>
+	</div>
+    <!-- Copyright -->
+  </footer>
+  
+</div>
+
+<!-- End of .container -->
+</body>
+</html>
